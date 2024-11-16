@@ -2,25 +2,32 @@ from random import randrange
 from threading import Barrier, Thread
 from time import ctime, sleep
 
+# Number of runners
 num_runners = 3
+
+# Barrier to synchronize runners at the finish line
 finish_line = Barrier(num_runners)
+
+# List of runners
 runners = ['Huey', 'Dewey', 'Louie']
 
 def runner():
-    name = runners.pop()
-    sleep(randrange(2, 5))
-    print('%s reached the barrier at: %s \n' % (name, ctime()))
-    finish_line.wait()
+    # Each runner performs the following actions
+    name = runners.pop()  # Remove and get the name of the runner
+    sleep(randrange(2, 5))  # Simulate running with random time (2–5 seconds)
+    print('%s reached the barrier at: %s \n' % (name, ctime()))  # Print when runner reaches the barrier
+    finish_line.wait()  # Wait at the barrier until all threads arrive
 
 def main():
-    threads = []
-    print('START RACE!!!!')
+    threads = []  # List to store threads
+    print('START RACE!!!!')  
     for i in range(num_runners):
+        # Create and start threads for each runner
         threads.append(Thread(target=runner))
         threads[-1].start()
     for thread in threads:
-        thread.join()
-    print('Race over!')
+        thread.join()  # Wait for all threads to complete
+    print('Race over!')  # End message
 
 if __name__ == "__main__":
     main()

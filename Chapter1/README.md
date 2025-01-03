@@ -1,0 +1,118 @@
+# Parallel and Concurrent Programming Examples
+
+This repository demonstrates various concepts of parallel and concurrent programming using Python. Each script showcases a unique method or library for achieving parallelism, concurrency, or inter-process communication.
+
+---
+
+## Table of Contents
+- [IPC.PY](#ipcpy)
+- [MPI.PY](#mpipy)
+- [MULTI_PROCESS.PY](#multi_processpy)
+- [PCNM.PY](#pcnmpy)
+- [PARALLILSM.PY](#parallilsmpy)
+- [SHARED_MEM.PY](#shared_mempy)
+- [SYNC.PY](#syncpy)
+- [TASK_PARALILLSM.PY](#task_paralillsmpy)
+- [FIBONACCI.PY](#fibonaccipy)
+- [PIPE.PY](#pipepy)
+
+---
+
+### **IPC.PY**
+Demonstrates inter-process communication using Python's `multiprocessing` module with a `Queue`.
+
+- **Producer Process**: Generates integers (0–4) and places them into the queue.
+- **Consumer Process**: Retrieves integers from the queue and processes them.
+- **Purpose**: Demonstrates the producer-consumer pattern with multiprocessing.
+
+---
+
+### **MPI.PY**
+Uses the `mpi4py` library to demonstrate inter-process communication in a distributed environment.
+
+- **Rank 0**: Sends a dictionary to Rank 1.
+- **Rank 1**: Receives and prints the dictionary.
+- **Other Ranks**: Remain idle.
+- **Purpose**: Demonstrates message passing in parallel computing.
+
+---
+
+### **MULTI_PROCESS.PY**
+Compares multiprocessing and multithreading for a random number generation task.
+
+- **Multiprocessing**: Spawns multiple processes for parallel execution.
+- **Multithreading**: Uses threads to perform the same task concurrently.
+- **Output**: Execution times for both methods.
+- **Purpose**: Highlights performance differences between multiprocessing and multithreading.
+
+---
+
+### **PCNM.PY**
+Demonstrates basic multiprocessing by calculating the square and cube of a number concurrently.
+
+- **Process 1**: Computes the square of a number.
+- **Process 2**: Computes the cube of a number.
+- **Purpose**: Illustrates parallel task execution.
+
+---
+
+### **PARALLILSM.PY**
+Showcases data parallelism using NumPy for vector addition.
+
+- **Key Feature**: Utilizes NumPy's internal parallelism for fast computation on large datasets.
+- **Output**: Execution time and first 10 elements of the result.
+- **Purpose**: Demonstrates efficient data parallelism with optimized libraries.
+
+---
+
+### **SHARED_MEM.PY**
+Demonstrates thread-safe shared memory access with locks.
+
+- **Deposit Function**: Adds an amount to a shared balance.
+- **Withdraw Function**: Subtracts an amount from the shared balance.
+- **Purpose**: Highlights safe shared memory access in a multithreading environment.
+
+---
+
+### **SYNC.PY**
+Illustrates thread synchronization using a semaphore.
+
+- **Semaphore**: Limits access to a shared resource to two threads at a time.
+- **Threads**: Simulate concurrent access to a resource.
+- **Purpose**: Demonstrates controlled access to shared resources using semaphores.
+
+---
+
+### **TASK_PARALILLSM.PY**
+Demonstrates task parallelism using the `ThreadPoolExecutor`.
+
+- **Tasks**: Executes two functions concurrently.
+- **Purpose**: Highlights how to manage multiple tasks in parallel with high-level APIs.
+
+---
+
+### **FIBONACCI.PY**
+Calculates the Fibonacci sequence using multithreading.
+
+- **Threads**: Compute Fibonacci numbers concurrently for the same input.
+- **Output**: Results and execution time for each thread.
+- **Purpose**: Demonstrates parallel computation of a recursive algorithm.
+
+---
+
+### **PIPE.PY**
+Showcases inter-process communication using a `Pipe`.
+
+- **Parent Process**: Sends a message to the child process and receives a processed response.
+- **Child Process**: Converts the message to uppercase and sends it back.
+- **Purpose**: Demonstrates bidirectional communication between processes using pipes.
+
+---
+
+## License
+This project is licensed under the MIT License. Feel free to use and modify the code as needed.
+
+## Contributing
+Contributions are welcome! Feel free to submit a pull request or open an issue for improvements or new examples.
+
+---

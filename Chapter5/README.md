@@ -9,6 +9,9 @@ This script demonstrates concurrent execution using `ThreadPoolExecutor`. It cal
 - First, it executes a single task.
 - Then, it executes multiple tasks concurrently using `executor.submit()` and `executor.map()`.
 
+![tast](https://github.com/user-attachments/assets/220f6d06-37c6-44a9-a758-a453e47c6717)
+
+
 #### Key functionality:
 - `cube(number)` calculates the cube of a given number.
 - Executes a single task and multiple tasks concurrently using threads.
@@ -19,6 +22,9 @@ This script compares sequential execution, thread pool execution, and process po
 #### Key functionality:
 - `count(number)` simulates CPU-bound work by performing a loop.
 - Executes the tasks sequentially, using threads, and using processes for comparison.
+
+![sync](https://github.com/user-attachments/assets/fc71098c-b223-41fc-8f4b-96c4aced81b5)
+
 
 ### 3. **ASYNC_TASK_MANIPULATION.PY**
 This script demonstrates asynchronous programming with `asyncio`. It calculates the factorial, Fibonacci sequence, and binomial coefficient concurrently using coroutines and `asyncio.Task()`.

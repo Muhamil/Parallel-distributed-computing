@@ -42,6 +42,8 @@ This script simulates a finite state machine (FSM) with asynchronous state trans
 - States are represented as coroutines.
 - The script transitions between states randomly based on input values, demonstrating asynchronous state management.
 
+![async corotine](https://github.com/user-attachments/assets/28f380d6-7b5c-43e1-9300-4c22bc34ed31)
+
 ### 5. **ASYNCIO_FUTURE.PY**
 This script demonstrates the use of `asyncio.Future` to manage asynchronous operations that can return a result in the future. It shows how to work with `asyncio.Future` objects to coordinate between tasks.
 

@@ -3,23 +3,23 @@ import time
 
 # Function A that will run in its own thread
 def function_A():
-    print(threading.currentThread().getName() + str('--> starting \n'))  # Print the start message with thread name
+    print(threading.current_thread().name + str('--> starting \n'))  # Print the start message with thread name
     time.sleep(2)  # Simulate some work by sleeping for 2 seconds
-    print(threading.currentThread().getName() + str('--> exiting \n'))  # Print the exit message with thread name
+    print(threading.current_thread().name + str('--> exiting \n'))  # Print the exit message with thread name
     return
 
 # Function B that will run in its own thread
 def function_B():
-    print(threading.currentThread().getName() + str('--> starting \n'))  # Print the start message with thread name
+    print(threading.current_thread().name + str('--> starting \n'))  # Print the start message with thread name
     time.sleep(2)  # Simulate some work by sleeping for 2 seconds
-    print(threading.currentThread().getName() + str('--> exiting \n'))  # Print the exit message with thread name
+    print(threading.current_thread().name + str('--> exiting \n'))  # Print the exit message with thread name
     return
 
 # Function C that will run in its own thread
 def function_C():
-    print(threading.currentThread().getName() + str('--> starting \n'))  # Print the start message with thread name
+    print(threading.current_thread().name + str('--> starting \n'))  # Print the start message with thread name
     time.sleep(2)  # Simulate some work by sleeping for 2 seconds
-    print(threading.currentThread().getName() + str('--> exiting \n'))  # Print the exit message with thread name
+    print(threading.current_thread().name + str('--> exiting \n'))  # Print the exit message with thread name
     return
 
 

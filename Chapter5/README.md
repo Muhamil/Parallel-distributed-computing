@@ -33,6 +33,8 @@ This script demonstrates asynchronous programming with `asyncio`. It calculates 
 - Asynchronous coroutines like `factorial()`, `fibonacci()`, and `binomial_coefficient()` are executed concurrently.
 - Utilizes `asyncio.sleep()` for non-blocking behavior, making it efficient for IO-bound tasks.
 
+![manipulating_task](https://github.com/user-attachments/assets/957a3524-66a3-404e-a45d-e3222716d3d2)
+
 ### 4. **ASYNC_COROTINE.PY**
 This script simulates a finite state machine (FSM) with asynchronous state transitions using `asyncio`. Each state (`start_state`, `state1`, `state2`, `state3`, `end_state`) transitions based on random values, showcasing how to structure asynchronous workflows.
 
@@ -47,4 +49,4 @@ This script demonstrates the use of `asyncio.Future` to manage asynchronous oper
 - `asyncio.Future()` is used to handle asynchronous results that are set at a later time.
 - Future objects are used to synchronize the completion of asynchronous operations.
 
-
+![dealing](https://github.com/user-attachments/assets/f535b204-abf6-4497-8283-dcea5ec9a87d)
